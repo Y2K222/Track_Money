@@ -1,0 +1,99 @@
+:root {
+  --blue: #3490dc;
+  --indigo: #6574cd;
+  --purple: #9561e2;
+  --pink: #f66D9b;
+  --red: #e3342f;
+  --orange: #f6993f;
+  --yellow: #ffed4a;
+  --green: #38c172;
+  --teal: #4dc0b5;
+  --cyan: #6cb2eb;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #3490dc;
+  --secondary: #6c757d;
+  --success: #38c172;
+  --info: #6cb2eb;
+  --warning: #ffed4a;
+  --danger: #e3342f;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: "Nunito", sans-serif;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+@font-face {
+  font-family: Logofont;
+  src: url('fonts/Bebas/bebas___-webfont.ttf');
+}
+
+body{
+  background-image: url('images/wallpaper.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: arial;
+}
+.container{
+  padding: 10px 30px;
+}
+.row{
+  clear: both;
+  width: 100%;
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+.logo{
+  display: block;
+  font-size: 60px;
+  font-family: Logofont;
+  margin-top: 90px;
+}
+.logo-first{
+  margin-right: 50px;
+  color: var(--white);
+}
+.logo-second{
+  margin-left: 50px;
+  color: var(--orange);
+}
+.info{
+  margin-top: 30px;
+  color: #ddd;
+  opacity: .8;
+}
+.input-group{
+  margin-top: 30px;
+}
+.input-group label{
+  color: var(--white);
+  margin-left: 30px;
+}
+.input-group input{
+  text-align: center;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--white);
+  color: var(--white);
+  margin: 10px auto;
+}
+.input-group input:focus{
+  border-bottom: 2px solid var(--orange);
+}
+.btn{
+  text-decoration: none;
+  background: var(--orange);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: var(--white);
+}

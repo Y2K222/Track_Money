@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="main.css">
+    <script src="lib/jquery.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+
+  </head>
+  <body>
+
+    <!-- toolbar -->
+    <nav class=" toolbar shadow">
+      <div class="row">
+        <div class="col-6 text-left">
+          <span class="logo"><span class="logo-first">Track</span>  Money</span>
+        </div>
+        <!-- <div class="col-6 text-right">
+          <span class="nav_onoff" onclick="openNav()"><i class="fa fa-ellipsis-v nav_icon"></i></span>
+        </div> -->
+      </div>
+    </nav>
+
+    <!-- sidebar -->
+    <div id="mySidenav" class="sidenav">
+    </div>
+
+    <!-- banner -->
+    <div class="banner">
+      <div class="card shadow-sm">
+        <div class="row">
+          <span class="date" id="date">23</span>
+          <span class="day" id="day">Sat</span>
+          <span class="year"><span id="month"></span>,<span id="year"></span></span>
+        </div>
+        <div class="row balance-container">
+          <div class="col-6 text-center">
+            <span class="header">Your Balance</span>
+            <span class="amont" id="current_amont"></span>
+          </div>
+          <div class="col-6 text-center">
+            <span class="header">Today's Usage</span>
+            <span class="amont"  id="amont"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- info icon -->
+    <div class="row text-center" id="info">
+      <i class="fa fa-ban info-icon"></i><br>
+      <span class="info-icon-text">No data for today !</span>
+    </div>
+
+    <!-- activity list -->
+    <div class="card-corner shadow-sm" id="target">
+
+    </div>
+
+    <!-- add btn -->
+    <div class="row fixed-bottom">
+      <button type="button" class="add-btn shadow" name="button" id="add_button">+</button>
+    </div>
+
+    <!-- add view -->
+    <div class="row fixed-bottom col-12 addview-container" id="addview_container">
+      <div class="row">
+        <div class="col-6 text-left">
+          <i class="activity_icon fa fa-plus" id="income_btn"></i><br>
+          <span class="activity_icon_text">Income</span>
+        </div>
+        <div class="col-6 text-right">
+          <img src="images/return.png" alt="return" class="icon" id="return">
+        </div>
+      </div>
+      <div class="row text-center">
+        <span class="input_show" id="activity"></span> <span class="input_show" id="amont_text"></span>
+      </div>
+      <div class="row input-icon-container">
+        <table class="activity-container" id="activity_container">
+          <tr id="row_one" class="activity_row">
+
+          </tr>
+          <br>
+          <tr id="row_two" class="activity_row">
+
+          </tr>
+        </table>
+        <table class="number-input-container">
+          <tr id="number_row_one">
+
+          <br>
+          <tr id="number_row_two">
+
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- overlay -->
+    <div class="overlay" id="overlay">
+
+    </div>
+  </body>
+  <script src="../Model/User.js" charset="utf-8"></script>
+  <script src="../Model/Activity.js" charset="utf-8"></script>
+
+  <script src="main.js" charset="utf-8"></script>
+
+</html>

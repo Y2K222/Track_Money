@@ -1,0 +1,34 @@
+*******Techlonogy************
+
+////Backend
+    Athutication Systm  => Facebook Api
+    Datastorage => Cache Api
+
+////Frontend
+    UI => HTML5 / scss
+    Function => Core Javascript
+
+     <div id="new-header">
+        <script>
+            $("#new-header").load("header.html");
+        </script>
+    </div>
+
+*******Functions************
+
+-Add current money (Currency json)
+
+-Can review everyday money usage
+    chart / calendar 
+
+-Add today usage 
+    calculate remaining money / icons ===
+
+-Share
+
+-Can view Profile
+
+-Themes
+    Dark / Light / Default
+
+
